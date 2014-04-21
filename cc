@@ -151,15 +151,6 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "nbits"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#nonce>
-    a rdf:Property ;
-    <http://www.w3.org/2000/01/rdf-schema#comment> """
-       Nonce for creating proof of work aesthetic
-    """@en ;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "once"@en ;
-    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
-
 <http://www.w3.org/ns/auth/cc#previousBlockHeader>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
