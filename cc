@@ -1,13 +1,14 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://www.w3.org/ns/auth/cc#>
+<https://w3id.org/cc#>
     <http://purl.org/dc/terms/created> "2013-10-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
     a <http://www.w3.org/2002/07/owl#Ontology> ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
-   Ontology for Certificates and crypto stuff.
+   Ontology for crypto currencies.
    This is in development. 
    Ontology for Crypto Currencies:
      * bitcoin
+     * bitmark
      * alt coins
      * ripple
      * others
@@ -16,7 +17,7 @@
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" ;
     <http://xmlns.com/foaf/0.1/maker> <http://melvincarvalho.com/#me> .
 
-<http://www.w3.org/ns/auth/cc#BlockHeader>
+<https://w3id.org/cc#BlockHeader>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A Block Header for a crypto currency
@@ -25,7 +26,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "BlockHeader"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#ElectronicCoin>
+<https://w3id.org/cc#ElectronicCoin>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        We define an Electronic coin as a chain of digital signatures.  As per Satoshi's paper.
@@ -34,7 +35,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "ElectronicCoin"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#MerkleRoot>
+<https://w3id.org/cc#MerkleRoot>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The root of a merkle tree, of items
@@ -43,7 +44,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "MerkleRoot"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#TransactionInput>
+<https://w3id.org/cc#TransactionInput>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A Block Transaction Input for a crypto currency
@@ -52,7 +53,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "TransactionInput"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#TransactionOutput>
+<https://w3id.org/cc#TransactionOutput>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A Block Transaction Output for a crypto currency
@@ -61,7 +62,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "TransactionOutput"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#bitcoin>
+<https://w3id.org/cc#bitcoin>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        This represents a bitcoin address which should be a bitcoin: URI
@@ -70,7 +71,16 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "bitcoin"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#blockHeaderHash>
+<https://w3id.org/cc#bitmark>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       This represents a bitcoin address which should be a bitmark: URI
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "bitmark"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<https://w3id.org/cc#blockHeaderHash>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A hash of a block (traditionally sha256)
@@ -79,7 +89,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "blockHeaderHash"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#hasInput>
+<https://w3id.org/cc#hasInput>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A block transaction has an input.
@@ -88,7 +98,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "hasInput"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#hasOutput>
+<https://w3id.org/cc#hasOutput>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A block transaction has an ouput.
@@ -97,7 +107,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "hasOutput"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#hasTransaction>
+<https://w3id.org/cc#hasTransaction>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The block chain has a transaction.
@@ -106,7 +116,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "hasTransaction"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#height>
+<https://w3id.org/cc#height>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The height according to the longest chain.
@@ -115,7 +125,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "height"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#index>
+<https://w3id.org/cc#index>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The index number of an input or output, sometimes referred to as vout or n
@@ -124,7 +134,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "index"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#latestBlockHeader>
+<https://w3id.org/cc#latestBlockHeader>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The latest block header for an electronic coin.
@@ -133,7 +143,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "latestBlockHeader"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#lockTime>
+<https://w3id.org/cc#lockTime>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        This is the lock time.  For bitcoin if non-zero and sequence numbers are < 0xFFFFFFFF: block height or timestamp when transaction is final
@@ -142,7 +152,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "lockTime"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#nbits>
+<https://w3id.org/cc#nbits>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        This is the term used in the bitcoin reference client.  It is the target, but in a compact and custom 4-byte encoding.
@@ -151,7 +161,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "nbits"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#previousBlockHeader>
+<https://w3id.org/cc#previousBlockHeader>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The previous block header
@@ -160,7 +170,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "previousBlockHeader"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#protocolSpecification>
+<https://w3id.org/cc#protocolSpecification>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The protocol used to verify electronic coins.
@@ -169,7 +179,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "protocolSpecification"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#scriptSig>
+<https://w3id.org/cc#scriptSig>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The input scriptSig
@@ -178,7 +188,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "scriptSig"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#sequence>
+<https://w3id.org/cc#sequence>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        Transaction sequence.
@@ -187,7 +197,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "sequence"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#testnet3>
+<https://w3id.org/cc#testnet3>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        This represents a bitcoin testnet3 address which should be a bitcoin: URI
@@ -196,7 +206,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "testnet3"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#timestamp>
+<https://w3id.org/cc#timestamp>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A unix timestamp for crypto blocks
@@ -205,7 +215,7 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<http://www.w3.org/ns/auth/cc#transactionMerkleRoot>
+<https://w3id.org/cc#transactionMerkleRoot>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        The hash of the merkle tree of transactions.
