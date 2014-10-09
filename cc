@@ -23,13 +23,13 @@
        A Block Header for a crypto currency
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "BlockHeader"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "BlockHeader"@en, "Credit"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<https://w3id.org/cc#ElectronicCoin>
+<https://w3id.org/cc#Credit>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
-       We define an Electronic coin as a chain of digital signatures.  As per Satoshi's paper.
+       A Credit / IOU between two parties.
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "ElectronicCoin"@en ;
@@ -62,6 +62,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "TransactionOutput"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#amount>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       The amount of a credit between two entities.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "amount"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#bitcoin>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -87,6 +96,24 @@
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "blockHeaderHash"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<https://w3id.org/cc#currency>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       The currency of a credit between two entities, as a URI.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "currency"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<https://w3id.org/cc#destination>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       The destination of a credit between two entities.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "destination"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <https://w3id.org/cc#hasInput>
@@ -152,6 +179,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "lockTime"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#mark>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A mark is used to indicate approval of an honest actor (based on their URI).  This adds a meta layer of micro trust over the zero trust protocol, allowing, for example, thin clients to make storage / delegation trade-offs.  The term is overloaded as a dual meaning which also represents 1/1000th of the bitmark currency.  Arguably this term belongs in a new vocab, which may be added in future.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "mark"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#nbits>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -197,6 +233,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "sequence"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#source>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       The source of a credit between two entities.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "source"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#testnet3>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -213,14 +258,5 @@
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
-    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
-
-<https://w3id.org/cc#transactionMerkleRoot>
-    a rdf:Property ;
-    <http://www.w3.org/2000/01/rdf-schema#comment> """
-       The hash of the merkle tree of transactions.
-    """@en ;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "transactionMerkleRoot"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
