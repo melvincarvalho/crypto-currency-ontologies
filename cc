@@ -71,6 +71,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "amount"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#bit>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Indicates one millionth of a bitcoin.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "bit"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#bitcoin>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
