@@ -35,6 +35,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Credit"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#IronWallet>
+    a rdf:Class ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A multi user wallet of according to the Iron Wallet rules for webcredits.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IronWallet"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#MerkleRoot>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -60,6 +69,15 @@
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "TransactionOutput"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<https://w3id.org/cc#Wallet>
+    a rdf:Class ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A multi user wallet
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Wallet"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <https://w3id.org/cc#amount>
@@ -170,6 +188,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "height"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#inbox>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Inbox for new transactions
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "inbox"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#index>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -278,24 +305,6 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<https://w3id.org/cc#wallet>
-    a rdf:Property ;
-    <http://www.w3.org/2000/01/rdf-schema#comment> """
-       Relates a user to a wallet URI
-    """@en ;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "wallet"@en ;
-    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
-
-<https://w3id.org/cc#inbox>
-    a rdf:Property ;
-    <http://www.w3.org/2000/01/rdf-schema#comment> """
-       Inbox for new transactions
-    """@en ;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "inbox"@en ;
-    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
-
 <https://w3id.org/cc#tx>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -303,5 +312,14 @@
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "tx"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<https://w3id.org/cc#wallet>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Relates a user to a wallet URI
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "wallet"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
