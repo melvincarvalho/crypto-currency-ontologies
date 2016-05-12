@@ -125,6 +125,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "blockHeaderHash"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#context>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       The context of a credit eg why it was created, as a URI.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "currency"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#created>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
