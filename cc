@@ -161,6 +161,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "destination"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#faucet>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A faucet that gives out free currency
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "faucet"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#hasInput>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
