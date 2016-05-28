@@ -35,6 +35,24 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Credit"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#HDPrivateKey>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A Hierarchical deterministic private key according to bitcoin BIP 39
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "HDPrivateKey"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<https://w3id.org/cc#HDPublicKey>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A Hierarchical deterministic public key according to bitcoin BIP 39
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "HDPublicKey"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#IronWallet>
     a rdf:Class ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -87,15 +105,6 @@
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "amount"@en ;
-    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
-
-<https://w3id.org/cc#bit>
-    a rdf:Property ;
-    <http://www.w3.org/2000/01/rdf-schema#comment> """
-       Indicates one millionth of a bitcoin.
-    """@en ;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "bit"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <https://w3id.org/cc#bitcoin>
