@@ -10,7 +10,6 @@
      * bitcoin
      * bitmark
      * alt coins
-     * ripple
      * others
    """@en ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Ontology for Crypto Currencies." ;
