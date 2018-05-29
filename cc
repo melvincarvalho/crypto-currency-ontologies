@@ -250,6 +250,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "latestBlockHeader"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#ledger>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Relates a wallet to a ledger
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ledger"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#lockTime>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
