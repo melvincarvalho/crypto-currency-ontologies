@@ -133,6 +133,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "bitcoin"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#bit>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       This represents a 1000000th of a bitcoin
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "bit"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <#bitmark>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -293,6 +302,15 @@
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "mark"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#mBTC>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       This represents a 1000th of a bitcoin
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "bit"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <#nbits>
