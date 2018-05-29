@@ -34,6 +34,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Credit"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<https://w3id.org/cc#CreditChain>
+    a rdf:Class ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A chain of credits, e.g. in a document.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "CreditChain"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <https://w3id.org/cc#HDPrivateKey>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -149,6 +158,15 @@
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "currency"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<https://w3id.org/cc#creditChain>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Relates a wallet to a credit chain.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "creditChain"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <https://w3id.org/cc#created>
