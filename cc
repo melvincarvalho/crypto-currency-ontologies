@@ -196,6 +196,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "currency"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#description>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       The destination of a credit between two entities.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "description"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <#destination>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
