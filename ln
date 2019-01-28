@@ -49,6 +49,69 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "alias"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#capacity>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Capacity of a channel.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "capacity"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#chain_hash>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A hash of the chain id for the channel.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "chain_hash"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#destination>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Destination of the channel.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "destination"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#destination_policy>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Destination policy of the channel.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "destination_policy"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#source>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Source of the channel.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "source"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#source_policy>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Source policy of the channel.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "source_policy"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#short_channel_id>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Short ID of the channel.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "short_channel_id"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <#node_id>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
