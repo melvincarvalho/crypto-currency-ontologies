@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#>
+    <http://purl.org/dc/terms/created> "2019-01-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a <http://www.w3.org/2002/07/owl#Ontology> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+   Ontology for lightning network.
+   This is in development.  Terms may change before v0.1.0
+   """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Ontology for Lightning Network." ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" ;
+    <http://xmlns.com/foaf/0.1/maker> <https://melvincarvalho.com/#me> .
+
+<#Edge>
+    a rdf:Class ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       An edge in the lightning network
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Edge"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#Node>
+    a rdf:Class ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A Node in the lightning network
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Node"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+<#address>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       And address as a string.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "address"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+<#alias>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       An alias as for the node.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "alias"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#node_id>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       The public key of the node.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "node_id"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#rgb_color>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A hex color
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "rgb_color"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#timestamp>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A timestamp as a string.  UNIX style.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
