@@ -29,6 +29,14 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Node"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#Policy>
+    a rdf:Class ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A channel policy.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Policy"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <#address>
     a rdf:Property ;
@@ -139,4 +147,47 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#cltv_expiry_delta>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       cltv_expiry_delta.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "cltv_expiry_delta"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#htlc_minimum_msat>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       htlc_minimum_msat.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "htlc_minimum_msat"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#fee_base_msat>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       fee_base_msat.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "fee_base_msat"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#fee_proportional_millionths>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       fee_proportional_millionths.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "fee_proportional_millionths"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+<#disabled>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Whether or not disabled.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "disabled"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
