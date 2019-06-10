@@ -115,6 +115,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Wallet"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#WashWallet>
+    a rdf:Class ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       A multi user webcredits wallet designed as a cache that will go to zero.
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "WashWallet"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <#amount>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
