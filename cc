@@ -175,7 +175,7 @@
        The context of a credit eg why it was created, as a URI.
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "currency"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "context"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <#creditChain>
@@ -340,6 +340,15 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "nbits"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
+<#payment>
+    a rdf:Property ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> """
+       Related an activity stream Activity to a payment
+    """@en ;
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "payment"@en ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
 <#previousBlockHeader>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
@@ -394,22 +403,13 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "testnet3"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
-<#testnet3>
-    a rdf:Property ;
-    <http://www.w3.org/2000/01/rdf-schema#comment> """
-       This represents a bitcoin testnet3 address which should be a bitcoin: URI
-    """@en ;
-    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "testnet3"@en ;
-    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
-
 <#testnetBTC>
     a rdf:Property ;
     <http://www.w3.org/2000/01/rdf-schema#comment> """
        A testnet bitcoin
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "testnetBTC"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <#testnetMBTC>
@@ -418,7 +418,7 @@
        A testnet 1000th of a bitcoin
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "testnetMBTC"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <#testnetBit>
@@ -427,7 +427,7 @@
        A testnet 1000000th bitcoin
     """@en ;
     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <cc#> ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "testnetBit"@en ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 <#tx>
